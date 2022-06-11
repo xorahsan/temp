@@ -1,82 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML: Linking</title>
+    <title>Wallpapera: Find Wallpapers that suits you!</title>
 </head>
-
 <body>
-    <h1 id="links_in_html">Links in HTML (Anchor tag)</h1>
-    <p>There are to types of linking in HTML</p>
-    <ol>
-        <li><b>Relative Linking: </b>The type of linking in which we link our own page is called Relative Linking. For
-            example: About us, Contact us, Confirm Order, etc</li>
-        <li><b>Absolute Linking: </b>The type of linking in which we link external web pages such as Google or Youtube.
-        </li>
-    </ol>
+    <!-- align='center' is deprecated -->
+    <h1 align="center">Wallpapera: Find Wallpapers that suits you!</h1>
     <hr>
-    <h1 id="relative">Relative Linking Examples:</h1>
-    <a href="#">Void Click</a><br>
-    <a href="headings.html">Go to Headings</a><br>
-    <a href="links.html">Go to Links</a><br>
+    <h2>Featured:</h2>
 
-    <!-- giving no href will load current page -->
-    <a href="">No Link given</a><br>
-
-    <!-- wrong path will return 404 error -->
-    <a href="headings.htm">Wrong path given</a><br>
-    <h1 id="absolute">Absolute Linking Examples:</h1>
-    <a href="https://saamika.com">Saamika Website</a><br>
-    <a href="https://google.com/drive">Google Drive</a><br>
-
+    <!-- alt attribute is vital for SEO -->
+    <!-- width attribute should be controlled by css and only one dimension to avoid aspect ratio problems -->
+    <img src="../IMAGES/'a 'a b.jpg" alt="Rain in Night Wallpapers" width="400px"><br>
+    <p>Beautiful Rain in Night pic by Helena</p>
+    <img src="../IMAGES/1 % 2.jpg" alt="Rain in Night Wallpapers" width="400px">
+    <p>Beautiful Rain & Umbrella wallpaper at night by John</p>
     <hr>
-    <h1 id="attributes">Different Anchor Tag attributes:</h1>
-    <ul>
-        <li><b>target="_self": </b>Default current tab will go to specified link</li>
-        <p><a href="https://google.com" target="_self">Go to Google</a></p>
-        <li><b>target="_blank": </b>open the specified link in new tab</li>
-        <p><a href="https://google.com" target="_blank">Go to Google in blank tab</a></p>
-        <!-- if download value is not mentioned, the browser will suggest any name and may change the extension -->
-        <li><b>download: </b>download the specified relative link</li>
-        <p><a href="headings.html" target="_blank" download>Download video</a></p>
-
-        <!-- adding a file name with correct extension of the file will download the file with exact name that you gave -->
-        <li><b>download="Headings in HTML.html": </b>download the specified relative link with the given name</li>
-        <p><a href="headings.html" target="_blank" download="Headings in HTML.html">Download video</a></p>
-
-    </ul>
-    <hr>
-    <h1 id="href">Anchor tag href attribute:</h1>
-    <ul>
-        <li><b>href="whatsapp://923181236267": </b>Opens whatsapp with the given number</li>
-        <p><a href="whatsapp://923181236267">Open Whatsapp (opens in mobile)</a></p>
-        <li><b>href="tel:923181236267": </b> make a telephone call</li>
-        <p><a href="tel:923181236267">Call the number</a></p>
-        <li><b>href="mailto:xorahsan@gmail.com": </b>use to email the mentioned address</li>
-        <p><a href="mailto:xorahsan@gmail.com">Email now</a></p>
-
-    </ul>
-    <hr>
-    <h1 id="url_scheme">URL Scheme (protocols):</h1>
-    <p>There are many IANA registered url schemes and we can also make our own. The current list of url scheme of
-        different url scheme can be viewed on <a href="https://en.wikipedia.org/wiki/List_of_URI_schemes"
-            target="_blank">Wikipedia</a>. Moreover, it also depends upon browser whether it allows that scheme or not!
-    </p>
-    <hr>
-    <h1 id="shift_to_headings">Shift to different heading on current page using HTML only!:</h1>
-    <p>By giving the particulr HTML element id in a link, we can shift to different section of page without using css or javascript!</p>
-    <h2>List of current Headigns:</h2>
-    <ul>
-        <li><a href="#links_in_html">Links in HTML</a></li>
-        <li><a href="#relative">Relative Linking</a></li>
-        <li><a href="#absolute">Absolute Linking</a></li>
-        <li><a href="#href">Anchor tag Attributes</a></li>
-        <li><a href="#url_scheme">URL Scheme</a></li>
-        <li><a href="#shift_to_headings">Shift to another heading</a></li>
-    </ul>
+    <!-- it is always best experience to click on image than small text -->
+    <h2>Show Images in new tab</h2>
+    <p>Click on any image to show it on new tab</p>
+    <a href="../IMAGES/'a 'a b.jpg" target="_blank"><img src="../IMAGES/'a 'a b.jpg" alt="Rain in Night Wallpapers" width="300px"></a><br>
+    <a href="../IMAGES/1 % 2.jpg" target="_blank"><img src="../IMAGES/1 % 2.jpg" alt="Rain in Night Wallpapers" width="300px"></a><br>
+    <a href="../IMAGES/;a ;b.jpg" target="_blank"><img src="../IMAGES/;a ;b.jpg" alt="Rain in Night Wallpapers" width="300px"></a><br>
+    <a href="../IMAGES/a ..jpg" target="_blank"><img src="../IMAGES/a ..jpg" alt="Rain in Night Wallpapers" width="300px"></a><br>    
+    
+    <!-- download image -->
+    <h2>Download Wallpapers for mobile</h2>
+    <p>*you can download by just clicking on image</p>
+    <a href="../IMAGES/;a ;b.jpg" download="Wall1.jpg"><img src="../IMAGES/;a ;b.jpg" alt="Rain in Night Wallpapers" width="300px"></a><br>
+    <a href="../IMAGES/a ..jpg" download="Wall2.jpg"><img src="../IMAGES/a ..jpg" alt="Rain in Night Wallpapers" width="300px"></a><br> 
 </body>
-
 </html>
